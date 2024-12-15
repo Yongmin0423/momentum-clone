@@ -1,0 +1,134 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+.hidden {
+  display: none;
+}
+
+.completed {
+  background-color: beige;
+  text-decoration: line-through; /* 선택 사항: 텍스트에 취소선 추가 */
+}
+
+body {
+  font-family: "Single Day", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+container {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100vh;
+  width: 100vw;
+  padding: 0.5rem 1rem;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#weather {
+  span {
+    font-size: 2rem;
+  }
+  div {
+    font-size: 1.3rem;
+  }
+}
+
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}
+
+#login-input {
+  font-size: 5rem;
+  background-color: transparent;
+  &::placeholder {
+    color: black;
+  }
+  &:focus {
+    outline: none;
+  }
+  border: none;
+  border-bottom: 0.2rem solid black;
+  margin-top: 15rem;
+  margin-bottom: 1rem;
+}
+
+.todo-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todo-input {
+  width: 20rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem black solid;
+  font-size: 1.5rem;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: black;
+    font-size: 1.5rem;
+  }
+  margin-bottom: 1rem;
+}
+
+#todo-list {
+  max-height: 30rem;
+  overflow-y: auto;
+  width: 50%;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    label {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+    button {
+      border: none;
+      background-color: transparent;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+#songs {
+  span {
+    font-size: 2rem;
+  }
+}
+
+#player-btn {
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
